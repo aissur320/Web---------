@@ -26,6 +26,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Links
 
 - Solution URL: (https://github.com/aissur320/Web---------/blob/main/Frontend%20Mentor/qr-code-component-main/qr-code-component-main/index.html)
+- Live Site URL: (https://aissur320.github.io/qr-code-component-main/index.html)
 
 ## My process
   Firt I see the preview picture and come to my sense that they will be a big div in the center of the page, which includes an image of QR code, two paragraphs of words. 
@@ -64,14 +65,14 @@ const proudOfThisFunc = () => {
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+
 
 ### Useful resources
 
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+
 
 ## Author
 
