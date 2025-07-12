@@ -1,6 +1,6 @@
-# Frontend Mentor - Four card feature section solution
+# Frontend Mentor - Testimonials grid section solution
 
-This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/aissur320/Web---------/tree/main/Frontend%20Mentor/four-card-feature-section-master/four-card-feature-section-master]
-- Live Site URL: [https://aissur320.github.io/four-card-feature-section-master/four-card-feature-section-master/index.html]
+- Solution URL: [https://github.com/aissur320/Web---------/tree/main/Frontend%20Mentor/testimonials-grid-section-main/testimonials-grid-section-main]
+- Live Site URL: [https://aissur320.github.io/testimonials-grid-section-main/testimonials-grid-section-main/index.html]
 
 ## My process
 
@@ -78,7 +78,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
 
 ## Author
 
