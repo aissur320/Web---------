@@ -5,15 +5,32 @@
     --LGblue: hsl(210, 46%, 95%);
 }
 
+.manrope{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 body{
     background-color: var(--LGblue);
+    display: flex;
+    flex-direction: column;
+}
+
+#component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
 
 #main{
     display: flex;
     flex-direction: row;
-    width: 50%;
+    height: 300px;
+    flex-basis: 60%;
     border-radius: 15px;
+    background-color: white;
 }
 
 #main-img{
@@ -25,10 +42,76 @@ body{
 #content{
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 25px;
+    color: var(--VDGblue);
+}
+
+h3{
+    font-weight: 700;
+}
+
+p{
+    font-weight: 500;
 }
 
 #user{
     display: flex;
     flex-direction: row;
+}
+
+#avatar{
+    border-radius: 50%;
+    height: 45px;
+    padding-right: 10px;
+}
+
+#user-info{
+    flex-grow: 1;
+    flex-shrink: 5;
+}
+
+#user-name{
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+#date{
+    font-weight: 500;
+    align-self: flex-end;
+}
+
+button{
+    background-color: var(--LGblue);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--DDblue);
+    height: 45px;
+    width: 45px;
+}
+
+.tooltip-box{
+    color: var(--Gblue);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--VDGblue);
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+.tooltip-box::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: var(--VDGblue) transparent transparent transparent;
 }
