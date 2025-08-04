@@ -23,7 +23,6 @@ if(window.innerWidth >= 768){
             // create and insert new extra div
             extraDiv = document.createElement("div");
             extraDiv.className = "tooltip-box";
-            // extraDiv.textContent = "S H A R E";
             extraDiv.innerHTML = 
                 `<div style="display: flex; flex-direction: row; align-items: center;">
                     <span style="color: var(--Gblue); padding-right: 10px">S H A R E</span>
@@ -54,10 +53,14 @@ if(window.innerWidth >= 768){
     });
 } else {
     shareBtn.addEventListener("mousedown", function(){
+        // It's a little more complicated than desktop version
+        // Since I have to remove the existing html tags
         if(!isShareActive){
             userDiv.style.backgroundColor = "var(--VDGblue)";
+            // remove the existing tags which are unnecessary
             const childrenToRemove = userDiv.querySelectorAll("img, #user-info");
             childrenToRemove.forEach(child => child.remove());
+            // create new tags with text and icons
             extraIcon = document.createElement("div");
             extraIcon.id = "Icon";
             extraIcon.style.display = "flex";
@@ -73,10 +76,13 @@ if(window.innerWidth >= 768){
                 </svg>
                 <img src="./images/icon-pinterest.svg" alt="pinterest" width="30" height="30">`
             ;
+            // make sure the location of the button
             wrapper.style.marginLeft = "auto";
+            // insert tags
             userDiv.insertBefore(extraIcon, wrapper);
             isShareActive = true;
         }else{
+            // do as if
             userDiv.style.backgroundColor = "transparent";
             const childrenToRemove = userDiv.querySelectorAll("#Icon");
             childrenToRemove.forEach(child => child.remove());
