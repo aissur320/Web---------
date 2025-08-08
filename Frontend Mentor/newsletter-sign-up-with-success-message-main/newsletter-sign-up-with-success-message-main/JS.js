@@ -1,17 +1,16 @@
 const input = document.getElementById("myInput");
 const submit = document.getElementById("submit");
 const form = document.getElementById("main-form");
-const jump = false;
 
 input.addEventListener("focus", function() {
-    if (input.value === "email@company.com") {
-        input.value = "";
+    if (input.placeholder === "email@company.com") {
+        input.placeholder = "";
     }
 });
 
 input.addEventListener("blur", function() {
-    if (input.value === "") {
-        input.value = "email@company.com";
+    if (input.placeholder === "") {
+        input.placeholder = "email@company.com";
     }
 });
 
@@ -19,8 +18,30 @@ submit.addEventListener("mousedown", function() {
     submit.style.backgroundColor = "var(--red)";
 })
 
+submit.addEventListener("mouseup", function() {
+    submit.style.backgroundColor = "var(--blue8)";
+})
+
 form.addEventListener("submit", function(e) {
     e.preventDefault();
-    const formData = new FormData(this);
-    const email = formData.get("email");
+    const email = input.value.trim();
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (emailPattern.test(email)) {
+        const encodedEmail = encodeURIComponent(email);
+        window.location.href = `./desktop-success.html?email=${encodedEmail}`;
+    } else {
+        if (input.style.backgroundColor != "var(--pink)"){
+            input.style.backgroundColor = "var(--pink)";
+            input.style.color = "var(--red)";
+            input.style.border = "1px solid var(--red)";
+
+            const row = document.querySelector("#span-row");
+            const newSpan = document.createElement("span");
+            newSpan.textContent = "Valid email required";
+            newSpan.style.color = "var(--red)";
+            newSpan.id = "newSpan";
+            row.appendChild(newSpan);
+        }
+    }
 })

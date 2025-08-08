@@ -3,6 +3,7 @@
     --blue8: hsl(234, 29%, 20%);
     --blue7: hsl(235, 18%, 26%);
     --grey: hsl(0, 0%,58%);
+    --pink: hsl(5, 100%, 90%);
 }
 
 .roboto {
@@ -55,23 +56,38 @@ p{
     font-weight: 400;
 }
 
-span{
+.wrapper > span{
     font-weight: 400;
 }
 
-h5{
+#span-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#label{
+    font-weight: 700;
+}
+
+#newSpan{
     font-weight: 700;
 }
 
 input{
     font-weight: 400;
-    color: var(--grey);
+    color: var(--blue8);
     border: 1px solid var(--grey);
     border-radius: 5px;
-    width: 100%;
+    width: 95%;
     height: 40px;
     padding-left: 15px;
     margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+input::placeholder{
+    color: var(--grey);
 }
 
 input:focus{
