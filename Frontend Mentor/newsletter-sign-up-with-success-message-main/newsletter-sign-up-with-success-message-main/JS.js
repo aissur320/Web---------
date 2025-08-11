@@ -1,6 +1,23 @@
 const input = document.getElementById("myInput");
 const submit = document.getElementById("submit");
 const form = document.getElementById("main-form");
+const img = document.getElementById("main-img");
+const content = document.getElementById("main-content");
+const main = document.getElementById("main");
+
+function updateLayout() {
+    if(window.innerWidth < 500){
+        main.insertBefore(img, content);
+        img.src = "./assets/images/illustration-sign-up-mobile.svg";
+    } else {
+        main.insertBefore(content, img);
+        img.src = "./assets/images/illustration-sign-up-desktop.svg";
+    }
+}
+
+updateLayout();
+
+window.addEventListener('resize', updateLayout);
 
 input.addEventListener("focus", function() {
     if (input.placeholder === "email@company.com") {

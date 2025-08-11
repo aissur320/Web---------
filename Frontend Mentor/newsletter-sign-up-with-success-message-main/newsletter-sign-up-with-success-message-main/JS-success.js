@@ -14,3 +14,7 @@ dismiss.addEventListener("mousedown", function() {
 dismiss.addEventListener("mouseup", function() {
     dismiss.style.backgroundColor = "var(--blue8)";
 })
+
+dismiss.addEventListener("click", function() {
+    window.location.href="./index.html";
+})

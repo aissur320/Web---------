@@ -31,9 +31,10 @@ body{
     align-items: stretch;
     border-radius: 30px;
     width: 30%;
-    height: 400px;
+    height: auto;
     color: var(--blue8);
     padding: 30px;
+    overflow: hidden;
 }
 
 #main-img{
@@ -59,4 +60,20 @@ button{
     padding-top: 10px;
     padding-bottom: 10px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 500px){
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #main{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        border-radius: 0%;
+        margin: 0;
+        padding: 0;
+    }
 }
