@@ -199,6 +199,14 @@ body{
         flex-direction: row;
         justify-content: space-around;
     }
+
+    .time-zone{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 }
 
 
